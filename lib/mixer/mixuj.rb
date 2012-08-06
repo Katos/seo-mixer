@@ -48,6 +48,17 @@ def valid(string)
 		@error="pusty [ ]"
 		return false
 	end
+  
+  s1.slice(/<a href=[^.+<\/a>]+<\/a>/)
+  for i in 0..s1.size
+    for j in i+1..s1.size
+      if s1[i]==s1[j]
+        		@error="brak unikalnych linkow"
+		        return false
+      end
+    end
+  end
+  
 	#if not s1.slice(/{*[^{]*}*\|.*{/).nil? #(/{[^{]+}+|.+{/
 	#	puts s1.slice(/{*[^{]*}*\|.*{/)
 	#	@error="wystapilo | przed po za  {}"

@@ -1,4 +1,14 @@
-1344249267
+1344250729
 Mixer	C:/Sites/Mixer/lib/mixer.rb	class Mixer
-MixerTest	C:/Sites/Mixer/test/test_hola.rb	class MixerTest 
+Mixuj	C:/Sites/Mixer/lib/mixer/mixuj.rb	class Mixer::Mixuj
+dl	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+dl_max	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+dl_min	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+error	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+initialize	C:/Sites/Mixer/lib/mixer/mixuj.rb	def initialize(string)
+input	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+max_min	C:/Sites/Mixer/lib/mixer/mixuj.rb		def max_min(tab)
 mixuj	C:/Sites/Mixer/lib/mixer.rb	  def self.mixuj(napis)
+mixuj	C:/Sites/Mixer/lib/mixer/mixuj.rb	def mixuj(s1)
+output	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+valid	C:/Sites/Mixer/lib/mixer/mixuj.rb	def valid(string)

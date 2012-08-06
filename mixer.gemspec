@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.description = %q{Mixer}
   s.email = %q{lukas.szczesiak@gmail.com}
   s.files = ["Rakefile", "lib/mixer.rb", "lib/mixer/mixuj.rb", "bin/mixer"]
-  s.test_files = ["test/test_hola.rb"]
+  s.test_files = ["test/test_mixer.rb"]
   s.homepage = %q{http://rubygems.org/gems/mixer}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}

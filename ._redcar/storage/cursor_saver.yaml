@@ -9,4 +9,7 @@ cursor_positions:
   - :path: lib/hola/mixuj.rb
     :cursor_offset: 36
     :timestamp: 2012-08-03 14:04:35.314000 +02:00
+  - :path: lib/hola.rb
+    :cursor_offset: 132
+    :timestamp: 2012-08-03 12:06:01.551000 +02:00
 files_to_retain: 0
