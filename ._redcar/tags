@@ -1,0 +1,4 @@
+1344249267
+Mixer	C:/Sites/Mixer/lib/mixer.rb	class Mixer
+MixerTest	C:/Sites/Mixer/test/test_hola.rb	class MixerTest 
+mixuj	C:/Sites/Mixer/lib/mixer.rb	  def self.mixuj(napis)
