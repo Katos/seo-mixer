@@ -1,74 +1,72 @@
 #encoding: UTF-8
 
 class Mixer
-#private
 	attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-public	
-def initialize(string)
+
+  def initialize(string)
     @input = string
-	@dl=string.size
-	@dl_max=string.size
-	@dl_min=string.size
+  	@dl=string.size
+  	@dl_max=string.size
+  	@dl_min=string.size
   end
 
-def valid
+  def valid
+  	s1=@input
+  	il_zam=0
+  	il_dom=0
+  	il_zam2=0
+  	il_dom2=0
 
-	s1=@input
-	il_zam=0
-	il_dom=0
-	il_zam2=0
-	il_dom2=0
-
-	il_zam=s1.count"{"
-	il_dom=s1.count"}"
-	il_zam2=s1.count"["
-	il_dom2=s1.count"]"
+  	il_zam=s1.count"{"
+  	il_dom=s1.count"}"
+  	il_zam2=s1.count"["
+  	il_dom2=s1.count"]"
 	
-	if s1.empty?
-		@error="Brak tekstu"
-		return false
-	end
-	if il_zam != il_dom
-		@error="Niezgodnosc w ilosci nawiasow { }"
-		return false
-	end
-	if il_zam2 != il_dom2
-		@error="Niezgodnosc w ilosci nawiasow [ ]"
-		return false
-	end
-	if il_zam==0 and il_zam2==0 and s1.include? "|"
-		@error="wystapilo | pomimmo bralu nawiasow [] lub {}"
-		return false
-	end
-	if s1.include? "{}"
-		@error="pusty { }"
-		return false
-	end
-	if s1.include? "[]"
-		@error="pusty [ ]"
-		return false
-	end
+  	if s1.empty?
+  		@error="Brak tekstu"
+  		return false
+  	end
+  	if il_zam != il_dom
+  		@error="Niezgodnosc w ilosci nawiasow { }"
+  		return false
+  	end
+  	if il_zam2 != il_dom2
+  		@error="Niezgodnosc w ilosci nawiasow [ ]"
+  		return false
+  	end
+  	if il_zam==0 and il_zam2==0 and s1.include? "|"
+  		@error="wystapilo | pomimmo bralu nawiasow [] lub {}"
+  		return false
+  	end
+  	if s1.include? "{}"
+  		@error="pusty { }"
+  		return false
+  	end
+  	if s1.include? "[]"
+  		@error="pusty [ ]"
+  		return false
+  	end
 
-	wyc=s1.scan(/<a href=[^<\/a>]+<\/a>/)
-	if not wyc[1].nil?
-		for i in 0..wyc.size
-			for j in i+1..wyc.size
-				if wyc[i]==wyc[j]
-					@error="brak unikalnych linkow"
-					return false
-				end
-			end
-		end
-	end
+  	wyc=s1.scan(/<a href=[^<\/a>]+<\/a>/)
+  	if not wyc[1].nil?
+  		for i in 0..wyc.size
+  			for j in i+1..wyc.size
+  				if wyc[i]==wyc[j]
+  					@error="brak unikalnych linkow"
+  					return false
+  				end
+  			end
+  		end
+  	end
 	
-	#if not s1.slice(/{*[^{]*}*\|.*{/).nil? #(/{[^{]+}+|.+{/
-	#	puts s1.slice(/{*[^{]*}*\|.*{/)
-	#	@error="wystapilo | przed po za  {}"
-	#	return false
-	#end
+  	#if not s1.slice(/{*[^{]*}*\|.*{/).nil? #(/{[^{]+}+|.+{/
+  	#	puts s1.slice(/{*[^{]*}*\|.*{/)
+  	#	@error="wystapilo | przed po za  {}"
+  	#	return false
+  	#end
 
-	return true
-end
+  	return true
+  end
 	def dl_zwieksz(size)
 		@dl=@dl+size
 		@dl_max=@dl_max+size
