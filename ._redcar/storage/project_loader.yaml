@@ -1,3 +1,8 @@
 --- 
-open_files: []
-
+open_files: 
+  - lib/mixer.rb
+  - bin/mixer
+  - lib/mixer/mixuj.rb
+  - test/test_mixer.rb
+  - mixer.gemspec
+  - Rakefile

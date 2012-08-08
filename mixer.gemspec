@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name               = "mixer"
+  s.name               = "seo-mixer"
   s.version            = "0.0.1"
   s.default_executable = "mixer"
 
@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.date = %q{2012-07-30}
   s.description = %q{Mixer}
   s.email = %q{lukas.szczesiak@gmail.com}
-  s.files = ["Rakefile", "lib/mixer.rb", "lib/mixer/mixuj.rb", "bin/mixer"]
+  s.files = ["Rakefile", "lib/mixer.rb", "lib/mixer/mix.rb", "bin/mixer"]
   s.test_files = ["test/test_mixer.rb"]
   s.homepage = %q{http://rubygems.org/gems/mixer}
   s.require_paths = ["lib"]

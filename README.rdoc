@@ -1,0 +1,9 @@
+This gem is used for mixing texts writen for Seo-applications
+By usign metod Mixer.mix("Your text") you generate and return object with 5 parametrs
+
+input - your inputed text
+output - generated text
+error - if text wasnt validated you will know what was a reson
+dl  -  length of outputed text
+dl_max - maximal possible length of mixed inputed text
+dl_min - minimal possible length of mixed inputed text

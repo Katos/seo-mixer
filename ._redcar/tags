@@ -1,14 +1,16 @@
-1344250729
+1344427661
 Mixer	C:/Sites/Mixer/lib/mixer.rb	class Mixer
-Mixuj	C:/Sites/Mixer/lib/mixer/mixuj.rb	class Mixer::Mixuj
-dl	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-dl_max	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-dl_min	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-error	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-initialize	C:/Sites/Mixer/lib/mixer/mixuj.rb	def initialize(string)
-input	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-max_min	C:/Sites/Mixer/lib/mixer/mixuj.rb		def max_min(tab)
-mixuj	C:/Sites/Mixer/lib/mixer.rb	  def self.mixuj(napis)
-mixuj	C:/Sites/Mixer/lib/mixer/mixuj.rb	def mixuj(s1)
-output	C:/Sites/Mixer/lib/mixer/mixuj.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
-valid	C:/Sites/Mixer/lib/mixer/mixuj.rb	def valid(string)
+Mixer	C:/Sites/Mixer/lib/mixer/mix.rb	class Mixer
+dl	C:/Sites/Mixer/lib/mixer/mix.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+dl_max	C:/Sites/Mixer/lib/mixer/mix.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+dl_min	C:/Sites/Mixer/lib/mixer/mix.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+dl_zmniejsz	C:/Sites/Mixer/lib/mixer/mix.rb		def dl_zmniejsz(size)
+dl_zwieksz	C:/Sites/Mixer/lib/mixer/mix.rb		def dl_zwieksz(size)
+error	C:/Sites/Mixer/lib/mixer/mix.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+initialize	C:/Sites/Mixer/lib/mixer/mix.rb	def initialize(string)
+input	C:/Sites/Mixer/lib/mixer/mix.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+max_min	C:/Sites/Mixer/lib/mixer/mix.rb		def max_min(tab)
+mix	C:/Sites/Mixer/lib/mixer.rb	  def self.mix(napis)
+mix	C:/Sites/Mixer/lib/mixer/mix.rb	def mix
+output	C:/Sites/Mixer/lib/mixer/mix.rb		attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
+valid	C:/Sites/Mixer/lib/mixer/mix.rb	def valid

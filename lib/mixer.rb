@@ -1,9 +1,8 @@
 class Mixer
-  def self.mixuj(napis)
-    napis="{{{wow|now}|tram|xx}| zram} "
-    mix = Mixuj.new(napis)
+  def self.mix(napis)
+    mix = Mix.new(napis)
     return mix
   end
 end
 
-require 'mixer/mixuj'
+require 'mixer/mix'
