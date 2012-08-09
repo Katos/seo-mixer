@@ -1,6 +1,6 @@
 #encoding: UTF-8
 
-class Mixer
+class Mix::Mixer
 	attr_accessor :dl, :input, :output, :error, :dl_max, :dl_min 
 
   def initialize(string)
@@ -10,7 +10,7 @@ class Mixer
   	@dl_min=string.size
   end
 
-  def valid
+  def valid?
   	s1=@input
   	il_zam=0
   	il_dom=0
@@ -80,7 +80,7 @@ class Mixer
 	end
 	
 	def max_min(tab)
-		min=-1
+    min=-1
 		max=-1
 		tab.each do |i|
 			if  max==-1 or (i.length)>max 
@@ -98,7 +98,7 @@ class Mixer
 def mix
 
 	s1=@input
-	if not valid()
+  unless valid
 		return error
 	else
 	
@@ -147,7 +147,7 @@ def mix
 		end
 	end
 
-	
+	p s1
 
 
 	#                        SPRAWDZANIE  { }
@@ -178,7 +178,7 @@ def mix
 	end
 
 	@output=s1
-   return output   #,dl,dl_max,dl_min
+   return s1   #,dl,dl_max,dl_min
 	
 	end
 	end
