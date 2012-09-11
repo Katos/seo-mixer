@@ -107,6 +107,9 @@ class Mixer
 def mix
 
   s1= String.new(@input)
+    @dl=s1.size
+  	@dl_max=s1.size
+  	@dl_min=s1.size
   unless valid?
 	return error
   else
